@@ -1,0 +1,906 @@
+@import url('https://fonts.googleapis.com/css2?family=Cookie&family=Lora&family=Sigmar&display=swap');
+
+/*
+font-family: 'Cookie', cursive;
+font-family: 'Lora', serif;
+font-family: 'Sigmar', cursive;
+*/
+
+body{
+    margin: 0;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* Menu Navegador (común para todos los html) */
+
+.menu_navegador{
+    position: fixed;
+    top: 0;
+    border: 1px solid black;
+    border-left-style: none;
+    border-right-style: none;
+    border-top-style: none;
+    background-color: rgb(243, 202, 22);
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 5px 5px 15px 0px rgba(0, 0, 0, 0.5);
+}
+.minilogo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.minilogo img{
+    width: 60px;
+    height: 60px;
+    padding-top: 5px;
+    padding-left: 5px;
+    padding-bottom: 5px;
+}
+.minilogo p{
+    list-style-type: none;
+    text-decoration: none;
+    font-family: 'Cookie', cursive;
+    color: black;
+    padding-left: 5px;
+    font-size: 25px;
+}
+.menu_navegador ul{
+    list-style-type: none;
+    font-size: 16px;
+    text-align: right;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+.menu_navegador ul li{
+    display: inline-block;
+    padding: 10px;
+}
+.menu_navegador ul li a{
+    list-style-type: none;
+    text-decoration: none;
+    font-family: 'Sigmar', cursive;
+    text-align: right;
+    text-transform: uppercase;
+    color:rgb(0, 0, 0);
+    box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.459);
+    padding: 2px;
+    border-radius: 10%;
+}
+.menu_navegador ul li a:hover{
+    color:rgb(252, 83, 4)
+}
+
+/* El Footer (común para todos los html) */
+
+.redes{
+    background-color: rgb(231, 230, 228);
+    width: 100%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+.redes ul li{
+    display: inline-flex;
+    padding: 10px 20px;
+}
+.redes ul li a{
+    list-style-type: italic;
+    text-decoration: none;
+    font-family: 'Cookie', cursive;
+    font-size: 40px;
+    color:rgb(0, 0, 0)
+}
+.redes ul li a:hover{
+    color:rgb(252, 83, 4)
+}
+/* HTML1: INICIO */
+
+.cajaconlogo{
+    background-color: white;
+    height: 450px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 72px;
+}
+.cajaconlogo img{
+    height: 330px;
+    width: 340px; 
+    object-fit: cover;
+}
+
+.hero{
+    border: 1px solid black;
+    border-left-style: none;
+    border-right-style: none;
+    background-color: rgba(243, 203, 22, 0.801);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    padding: 10px 0px;
+}
+.hero h1{
+    font-family: 'Sigmar', cursive;
+    font-size: 30px;
+    font-style: italic;
+}
+.hero p{
+    border: 1px solid black;
+    font-family: 'Lora', serif;
+    font-size: 18px;
+    font-style: italic;
+    padding: 0px 10px;
+}
+.hero img{
+    border: 2px dashed rgb(252, 84, 4);
+    height: 375px;
+    width: 95%;
+    object-fit: cover;
+    padding: 10px;
+}
+.hero2{
+    background-color: rgba(243, 203, 22, 0.918);
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.hero2 img{
+    height: 800px;
+    width: 100%;
+    object-fit: cover;
+    border-bottom: 1px solid black;
+}
+
+/* HTML2: PRODUCTOS */
+
+.productostitle{
+    font-family: 'Sigmar', cursive;
+    text-align: center;
+    width: 100%;
+    font-size: 30px;
+    background-color: rgb(231, 230, 228);
+    font-style: italic;
+    padding-top: 72px;
+}
+
+.productos{
+    border: 1px solid black;
+    border-left-style: none;
+    border-right-style: none;
+    background-color: blanchedalmond;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas:
+    "area1 area2 area3"
+    "area4 area5 area6"
+    ;
+    gap: 15px;
+    padding: 15px;
+}
+/* chipa */
+
+.chipa{
+    grid-area: area1;
+    border-radius: 1%;
+    border: 2px solid rgb(252, 83, 4);
+    background-color: rgb(255, 130, 72);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    text-justify: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    box-shadow: 5px 5px 15px 0px black;
+}
+.chipa img{
+    border-radius: 10%;
+    height: 400px;
+    width: 90%;
+    object-fit: cover;
+    transition: 1s;
+}
+.chipa img:hover {   
+    height: 500px;
+    width: 500px;
+    box-shadow: 5px 5px 15px 0px black;
+}
+.chipa h2{
+    font-family: 'Sigmar', cursive;
+}
+.chipa p{
+    font-family: 'Lora', serif;
+    font-style: italic;
+    padding: 5px 0px 0px 0px;
+}
+.chipa ul{
+    font-style: italic;
+    font-family: 'Lora', serif;
+    display: flex;
+    gap: 30px;
+    padding: 7px 0px;
+}
+
+/* pepas */
+
+.pepas{
+    grid-area: area2;
+    border-radius: 1%;
+    border: 2px solid rgb(243, 202, 22);
+    background-color: rgba(243, 203, 22, 0.555);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    text-justify: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    box-shadow: 5px 5px 15px 0px black;
+}
+.pepas img{
+    border-radius: 10%;
+    height: 400px;
+    width: 90%;
+    object-fit: cover;
+    transition: 1s;
+}
+.pepas img:hover {   
+    height: 500px;
+    width: 500px;
+    box-shadow: 5px 5px 15px 0px black;
+}
+.pepas h2{
+    font-family: 'Sigmar', cursive;
+}
+.pepas p{
+    font-family: 'Lora', serif;
+    font-style: italic;
+}
+
+/* medialunas */
+
+.medialunas{
+    grid-area: area3;
+    border-radius: 1%;
+    border: 2px solid rgb(252, 84, 4);
+    background-color:  rgba(252, 84, 4, 0.534);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    text-justify: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    box-shadow: 5px 5px 15px 0px black;
+}
+.medialunas img{
+    border-radius: 10%;
+    height: 400px;
+    width: 90%;
+    object-fit: cover;
+    transition: 1s;
+}
+.medialunas img:hover {   
+    height: 500px;
+    width: 500px;
+    box-shadow: 5px 5px 15px 0px black;
+}
+.medialunas h2{
+    font-family: 'Sigmar', cursive;
+}
+.medialunas p{
+    font-family: 'Lora', serif;
+    font-style: italic;
+}
+
+/* alfajores */
+
+.alfajores{
+    grid-area: area4;
+    border-radius: 1%;
+    border: 2px solid rgb(243, 202, 22);
+    background-color: rgba(243, 203, 22, 0.555);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    text-justify: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    box-shadow: 5px 5px 15px 0px black;
+}
+.alfajores img{
+    border-radius: 10%;
+    height: 400px;
+    width: 90%;
+    object-fit: cover;
+    transition: 1s;
+}
+.alfajores img:hover {   
+    height: 500px;
+    width: 500px;
+    box-shadow: 5px 5px 15px 0px black;
+}
+.alfajores h2{
+    font-family: 'Sigmar', cursive;
+}
+.alfajores p{
+    font-family: 'Lora', serif;
+    font-style: italic;
+}
+.alfajores ul{
+    font-style: italic;
+    font-family: 'Lora', serif;
+    padding: 7px 0px;
+}
+
+/* sopaparaguaya */
+
+.sopaparaguaya{
+    grid-area: area5;
+    border-radius: 1%;
+    border: 2px solid rgb(252, 84, 4);
+    background-color: rgba(252, 84, 4, 0.534);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    text-justify: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    box-shadow: 5px 5px 15px 0px black;
+}
+.sopaparaguaya img{
+    border-radius: 10%;
+    height: 400px;
+    width: 90%;
+    object-fit: cover;
+    transition: 1s;
+}
+.sopaparaguaya img:hover {   
+    height: 500px;
+    width: 500px;
+    box-shadow: 5px 5px 15px 0px black;
+}
+.sopaparaguaya h2{
+    font-family: 'Sigmar', cursive;
+}
+.sopaparaguaya p{
+    font-family: 'Lora', serif;
+    font-style: italic;
+}
+
+/* chipapizza */
+
+.chipapizza{
+    grid-area: area6;
+    border-radius: 1%;
+    border: 2px solid rgb(243, 202, 22);
+    background-color:rgba(243, 203, 22, 0.555);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    text-justify: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    box-shadow: 5px 5px 15px 0px black;
+}
+.chipapizza img{
+    border-radius: 10%;
+    height: 400px;
+    width: 90%;
+    object-fit: cover;
+    transition: 1s;
+}
+.chipapizza img:hover {   
+    height: 500px;
+    width: 500px;
+    box-shadow: 5px 5px 15px 0px black;
+}
+.chipapizza h2{
+    font-family: 'Sigmar', cursive;
+}
+.chipapizza p{
+    font-family: 'Lora', serif;
+    padding: 0px 10px;
+    font-style: italic;
+}
+
+/* HTML3: SUCURSALES */
+
+.sucursalestitle{
+    font-family: 'Sigmar', cursive;
+    text-align: center;
+    width: 100%;
+    font-size: 30px;
+    background-color: rgb(231, 230, 228);
+    font-style: italic;
+    padding-top: 72px;
+}
+
+/* locales*/
+
+.locales{
+    border: 2px dashed black;
+    border-left-style: none;
+    border-right-style: none;
+    background-color: rgba(243, 203, 22, 0.555);
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    grid-template-areas:
+    "area1 area2 area3"
+    ;
+    gap: 15px;
+    padding: 40px 15px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.localvas{
+    grid-area: area1;
+    border: 1px solid black;
+    text-align: center;
+    background-color: rgba(252, 83, 4, 0.377);
+    width: 33%;
+    box-shadow: 5px 5px 15px 0px black;
+}
+.localvas h2{
+    font-family: 'Sigmar', cursive;
+    padding: 10px 5px;
+}
+.localvas p{
+    font-family: 'Lora', serif;
+    padding: 5px;
+}
+.localvas img{
+    border: 2px dashed black;
+    object-fit: cover;
+    height: 500px;
+    width: 90%;
+    padding:5px;
+}
+.localvas iframe{
+    object-fit: cover;
+    width: 90%;
+    padding: 10px;
+}
+
+.localhiper{
+    grid-area: area2;
+    border: 1px solid black;
+    text-align: center;
+    background-color: rgba(252, 84, 4, 0.377);
+    width: 33%;
+    box-shadow: 5px 5px 15px 0px black;
+}
+.localhiper h2{
+    font-family: 'Sigmar', cursive;
+    padding: 10px 5px;
+}
+.localhiper p{
+    font-family: 'Lora', serif;
+    padding: 5px;
+}
+.localhiper img{
+    border: 2px dashed black;
+    object-fit: cover;
+    height: 500px;
+    width: 90%;
+    padding:5px;
+}
+.localhiper iframe{
+    object-fit: cover;
+    width: 90%;
+    padding: 10px;
+}
+
+.localcentro{
+    grid-area: area3;
+    border: 1px solid black;
+    text-align: center;
+    background-color: rgba(252, 83, 4, 0.377);
+    width: 33%;
+    box-shadow: 5px 5px 15px 0px black;
+}
+.localcentro h2{
+    font-family: 'Sigmar', cursive;
+    padding: 10px 5px;
+}
+.localcentro p{
+    font-family: 'Lora', serif;
+    padding: 5px;
+}
+.localcentro img{
+    border: 2px dashed black;
+    object-fit: cover;
+    height: 500px;
+    width: 90%;
+    padding:5px;
+}
+.localcentro iframe{
+    object-fit: cover;
+    width: 90%;
+    padding: 10px;
+}
+
+/* HTML4: MAYORISTA */
+
+.mayoristatitle{
+    font-family: 'Sigmar', cursive;
+    text-align: center;
+    width: 100%;
+    font-size: 30px;
+    background-color: rgb(231, 230, 228);
+    font-style: italic;
+    padding-top: 72px;
+}
+
+.productosmayoristas{
+    border: 2px dashed black;
+    border-left-style: none;
+    border-right-style: none;
+    background-color: blanchedalmond;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    grid-template-areas:
+    "area1 area2 area3"
+    ;
+    gap: 15px;
+    padding: 40px 15px;
+}
+
+.chipacong{
+    grid-area: area1;
+    border-radius: 2%;
+    border: 2px solid rgb(0, 0, 0);
+    width: 100%;
+    background-color: rgba(243, 203, 22, 0.555);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    text-justify: center;
+    padding: 30px 0px;
+    box-shadow: 5px 5px 15px 0px black;
+}
+.chipacong img{
+    border-radius: 10%;
+    height: 575px;
+    width: 90%;
+    object-fit: cover;
+}
+.chipacong img:hover{
+    box-shadow: 5px 5px 15px 0px black;
+}
+.chipacong h2{
+    font-family: 'Sigmar', cursive;
+    padding: 10px;
+}
+.chipacong p{
+    font-family: 'Lora', serif;
+    padding: 20px;
+}
+.precio_chipacong{
+    border-radius: 5%;
+    border: 2px dashed black;
+    padding: 5px 10px;
+    font-size: 30px;
+    font-family: 'Sigmar', cursive;;
+    background-color: blanchedalmond;
+    box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.459);
+}
+
+.potesmedialuna{
+    grid-area: area2;
+    border-radius: 2%;
+    border: 2px solid rgb(0, 0, 0);
+    width: 100%;
+    background-color: rgba(243, 203, 22, 0.555);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    text-justify: center;
+    padding: 30px 0px;
+    box-shadow: 5px 5px 15px 0px black;
+}
+.potesmedialuna img{
+    border-radius: 10%;
+    height: 575px;
+    width: 90%;
+    object-fit: cover;
+}
+.potesmedialuna img:hover{
+    box-shadow: 5px 5px 15px 0px black;
+}
+.potesmedialuna h2{
+    font-family: 'Sigmar', cursive;
+    padding: 10px;
+}
+.potesmedialuna p{
+    font-family: 'Lora', serif;
+    padding: 20px;
+}
+.precio_potesmedialuna{
+    border-radius: 5%;
+    border: 2px dashed black;
+    padding: 5px 10px;
+    font-size: 30px;
+    font-family: 'Sigmar', cursive;;
+    background-color: blanchedalmond;
+    box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.459);
+}
+
+.bolsasgrandes{
+    grid-area: area3;
+    border-radius: 2%;
+    border: 2px solid rgb(0, 0, 0);
+    width: 100%;
+    background-color: rgba(243, 203, 22, 0.555);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    text-justify: center;
+    padding: 30px 0px;
+    box-shadow: 5px 5px 15px 0px black;
+}
+.bolsasgrandes img{
+    border-radius: 10%;
+    height: 575px;
+    width: 90%;
+    object-fit: cover;
+}
+.bolsasgrandes img:hover{
+    box-shadow: 5px 5px 15px 0px black;
+}
+.bolsasgrandes h2{
+    font-family: 'Sigmar', cursive;
+    padding: 10px;
+}
+.bolsasgrandes p{
+    font-family: 'Lora', serif;
+    padding: 20px;
+}
+.precio_bolsasgrandes{
+    border-radius: 5%;
+    border: 2px dashed black;
+    padding: 5px 10px;
+    font-size: 30px;
+    font-family: 'Sigmar', cursive;;
+    background-color: blanchedalmond;
+    box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.459);
+}
+
+/* HTML5: CONTACTO */
+
+.pag_form{
+    width: 100%;
+    height: 1000px;
+    background-image: url('../images/paisajechipa.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.cajaconformulario{
+    border: 2px dashed rgb(0, 0, 0);
+    background-color: blanchedalmond;
+    width: auto;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 5px 5px 15px 0px rgb(0, 0, 0);
+}
+.formulario{
+    text-align: center;
+    text-justify: center;
+    width: 100%;
+    font-size: 15px;
+    font-family: 'Sigmar', cursive;
+    color: black;
+    padding: 50px;
+    border-left: none;
+    border-right: none;
+    text-align: center;
+}
+
+.saludo{
+    background-color: rgba(243, 203, 22, 0.555);
+    width: 100%;
+}
+.saludo p{
+    font-style: italic;
+    font-family: 'Lora', serif;
+    text-align: center;
+    padding: 15px 1px;
+}
+
+
+/* MEDIA QUERIES (Responssive)*/
+
+@media only screen and (max-width: 1350px){
+    .productosmayoristas{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }.chipacong{
+        width: 80%;
+    }
+    .potesmedialuna{
+        width: 80%;
+    }
+    .bolsasgrandes{
+        width: 80%;
+    }
+}
+
+@media only screen and (max-width: 1330px){
+    .locales{
+        display: flex;
+        flex-direction: column;
+    }
+    .localvas{
+        width: 95%;
+    }
+    .localhiper{
+        width: 95%;
+    }
+    .localcentro{
+        width: 95%;
+    }
+}
+
+@media only screen and (max-width: 1280px){
+    .productos{
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media only screen and (max-width: 840px){
+    .cajaconlogo{
+        padding-top: 250px;
+        height: 600px;
+    }
+    .cajaconlogo img{
+        width: 300px;
+        height: 290px;
+    }
+    .productostitle{
+        padding-top: 250px;
+    }
+    .sucursalestitle{
+        padding-top: 250px;
+    }
+    .mayoristatitle{
+        padding-top: 250px;
+    }
+    .chipacong img{
+        height: 400px;
+    }
+    .potesmedialuna img{
+        height: 400px;
+    }
+    .bolsasgrandes img{
+        height: 400px;
+    }
+    .menu_navegador{
+        flex-direction: column;
+    }
+    .menu_navegador ul{
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .menu_navegador ul li{
+        padding: 5px;
+    }
+}
+
+@media only screen and (max-width: 660px){
+    .cajaconlogo{
+        padding-top: 250px;
+        height: 600px;
+    }
+    .productostitle{
+        padding-top: 250px;
+    }
+    .sucursalestitle{
+        padding-top: 250px;
+    }
+    .mayoristatitle{
+        padding-top: 250px;
+    }
+    .alfajores ul{
+        flex-wrap: wrap;
+    }
+}
+
+@media only screen and (max-width: 500px){
+    .chipa ul{
+        flex-direction: column;
+        gap: 2px;
+    }
+    .productos{
+        padding: 0px;
+    }
+    .alfajores ul{
+        list-style-type: none;
+    }
+    .locales{
+        padding: 30px 0px;
+    }
+    .productosmayoristas{
+        width: 100%;
+        padding: 10px 0px;
+    }
+}
+
+@media only screen and (max-width: 380px){
+    .cajaconlogo img{
+        width: 270px;
+        height: 260px;
+    }
+    .redes ul{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+@media only screen and (max-width: 280px){
+    .cajaconlogo img{
+        width: 230px;
+        height: 225px;
+    }
+    .redes ul{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+}
+
+@media only screen and (max-width: 235px){
+    .cajaconlogo img{
+        width: 150px;
+        height: 145px;
+    }
+}
