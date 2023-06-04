@@ -88,7 +88,7 @@ font-family: 'Sigmar', cursive;
 }
 .redes ul li {
   display: inline-flex;
-  padding: 10px 30px 0px 0px;
+  padding: 10px 20px 0px 0px;
 }
 .redes ul li a {
   list-style-type: italic;

@@ -10,3 +10,15 @@
     padding-bottom: 10px;
     box-shadow: 5px 5px 15px 0px black;
 }
+
+@mixin tuneadomayorista{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    text-justify: center;
+    padding: 30px 0px;
+    box-shadow: 5px 5px 15px 0px black;
+    transition: 1s;
+}
