@@ -1,0 +1,122 @@
+
+/* HTML3: SUCURSALES */
+//------------------------------------------------------------------------------------------------------------------------------------------------------------------
+.sucursalestitle{
+    font-family: $main-font;
+    text-align: center;
+    width: 100%;
+    font-size: 30px;
+    background-color: rgb(231, 230, 228);
+    font-style: italic;
+    padding-top: 85px;
+}
+//------------------------------------------------------------------------------------------------------------------------------------------------------------------
+.locales{
+    border: 2px dashed black;
+    border-left-style: none;
+    border-right-style: none;
+    background-color: rgba(243, 203, 22, 0.555);
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    grid-template-areas:
+    "area1 area2 area3"
+    ;
+    gap: 15px;
+    padding: 40px 15px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+//------------------------------------------------------------------------------------------------------------------------------------------------------------------
+.localvas{
+    grid-area: area1;
+    border: 1px solid black;
+    text-align: center;
+    background-color: rgba(252, 83, 4, 0.377);
+    width: 33%;
+    box-shadow: 5px 5px 15px 0px black;
+    h2{
+        font-family: $main-font;
+        padding: 10px 5px;
+    }
+    p{
+        font-family: 'Lora', serif;
+        padding: 5px 15px;
+        font-size: larger;
+    }
+    img{
+        border: 2px dashed black;
+        object-fit: cover;
+        height: 500px;
+        width: 90%;
+        padding:5px;
+    }
+    iframe{
+        object-fit: cover;
+        width: 90%;
+        padding: 10px;
+    }
+}
+//------------------------------------------------------------------------------------------------------------------------------------------------------------------
+.localhiper{
+    grid-area: area2;
+    border: 1px solid black;
+    text-align: center;
+    background-color: rgba(252, 84, 4, 0.377);
+    width: 33%;
+    box-shadow: 5px 5px 15px 0px black;
+    h2{
+        font-family: $main-font;
+        padding: 10px 5px;
+    }
+    p{
+        font-family: 'Lora', serif;
+        padding: 5px 15px;
+        font-size: larger;
+    }
+    img{
+        border: 2px dashed black;
+        object-fit: cover;
+        height: 500px;
+        width: 90%;
+        padding:5px;
+    }
+    iframe{
+        object-fit: cover;
+        width: 90%;
+        padding: 10px;
+    }
+}
+//------------------------------------------------------------------------------------------------------------------------------------------------------------------
+.localcentro{
+    grid-area: area3;
+    border: 1px solid black;
+    text-align: center;
+    background-color: rgba(252, 83, 4, 0.377);
+    width: 33%;
+    box-shadow: 5px 5px 15px 0px black;
+    h2{
+        font-family: $main-font;
+        padding: 10px 5px;
+    }
+    p{
+        font-family: 'Lora', serif;
+        padding: 5px 15px;
+        font-size: larger;
+    }
+    img{
+        border: 2px dashed black;
+        object-fit: cover;
+        height: 500px;
+        width: 90%;
+        padding:5px;
+    }
+    iframe{
+        object-fit: cover;
+        width: 90%;
+        padding: 10px;
+    }
+}
+//------------------------------------------------------------------------------------------------------------------------------------------------------------------

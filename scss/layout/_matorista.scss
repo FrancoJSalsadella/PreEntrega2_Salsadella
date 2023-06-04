@@ -1,0 +1,154 @@
+
+/* HTML4: MAYORISTA */
+//------------------------------------------------------------------------------------------------------------------------------------------------------------------
+.mayoristatitle{
+    font-family: $main-font;
+    text-align: center;
+    width: 100%;
+    font-size: 30px;
+    background-color: rgb(231, 230, 228);
+    font-style: italic;
+    padding-top: 85px;
+}
+//------------------------------------------------------------------------------------------------------------------------------------------------------------------
+.productosmayoristas{
+    border: 2px dashed black;
+    border-left-style: none;
+    border-right-style: none;
+    background-color: blanchedalmond;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    grid-template-areas:
+    "area1 area2 area3"
+    ;
+    gap: 15px;
+    padding: 40px 15px;
+}
+//------------------------------------------------------------------------------------------------------------------------------------------------------------------
+.chipacong{
+    grid-area: area1;
+    border-radius: 2%;
+    border: 2px solid rgb(0, 0, 0);
+    width: 100%;
+    background-color: rgba(243, 203, 22, 0.555);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    text-justify: center;
+    padding: 30px 0px;
+    box-shadow: 5px 5px 15px 0px black;
+    img{
+        border-radius: 10%;
+        height: 575px;
+        width: 90%;
+        object-fit: cover;
+        &:hover{
+            box-shadow: 5px 5px 15px 0px black;
+        }
+    }
+    h2{
+        font-family: $main-font;
+        padding: 10px;
+    }
+    p{
+        font-family: 'Lora', serif;
+        padding: 20px;
+    }
+}
+.precio_chipacong{
+    border-radius: 5%;
+    border: 2px dashed black;
+    padding: 5px 10px;
+    font-size: 30px;
+    font-family: $main-font;
+    background-color: blanchedalmond;
+    box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.459);
+}
+//------------------------------------------------------------------------------------------------------------------------------------------------------------------
+.potesmedialuna{
+    grid-area: area2;
+    border-radius: 2%;
+    border: 2px solid rgb(0, 0, 0);
+    width: 100%;
+    background-color: rgba(243, 203, 22, 0.555);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    text-justify: center;
+    padding: 30px 0px;
+    box-shadow: 5px 5px 15px 0px black;
+    img{
+        border-radius: 10%;
+        height: 575px;
+        width: 90%;
+        object-fit: cover;
+        &:hover{
+            box-shadow: 5px 5px 15px 0px black;
+        }
+    }
+    h2{
+        font-family: $main-font;
+        padding: 10px;
+    }
+    p{
+        font-family: 'Lora', serif;
+        padding: 20px;
+    }
+}
+.precio_potesmedialuna{
+    border-radius: 5%;
+    border: 2px dashed black;
+    padding: 5px 10px;
+    font-size: 30px;
+    font-family: $main-font;
+    background-color: blanchedalmond;
+    box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.459);
+}
+//------------------------------------------------------------------------------------------------------------------------------------------------------------------
+.bolsasgrandes{
+    grid-area: area3;
+    border-radius: 2%;
+    border: 2px solid rgb(0, 0, 0);
+    width: 100%;
+    background-color: rgba(243, 203, 22, 0.555);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    text-justify: center;
+    padding: 30px 0px;
+    box-shadow: 5px 5px 15px 0px black;
+    img{
+        border-radius: 10%;
+        height: 575px;
+        width: 90%;
+        object-fit: cover;
+        &:hover{
+            box-shadow: 5px 5px 15px 0px black;
+        }
+    }
+    h2{
+        font-family: $main-font;
+        padding: 10px;
+    }
+    p{
+        font-family: 'Lora', serif;
+        padding: 20px;
+    }
+}
+.precio_bolsasgrandes{
+    border-radius: 5%;
+    border: 2px dashed black;
+    padding: 5px 10px;
+    font-size: 30px;
+    font-family: $main-font;
+    background-color: blanchedalmond;
+    box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.459);
+}
+//------------------------------------------------------------------------------------------------------------------------------------------------------------------

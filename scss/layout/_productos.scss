@@ -1,0 +1,277 @@
+
+/* HTML2: PRODUCTOS */
+//------------------------------------------------------------------------------------------------------------------------------------------------------------------
+.productostitle{
+    font-family: $main-font;
+    text-align: center;
+    width: 100%;
+    font-size: 30px;
+    background-color: rgb(231, 230, 228);
+    font-style: italic;
+    padding-top: 85px;
+}
+//------------------------------------------------------------------------------------------------------------------------------------------------------------------
+.productos{
+    border: 1px solid black;
+    border-left-style: none;
+    border-right-style: none;
+    background-color: blanchedalmond;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas:
+    "area1 area2 area3"
+    "area4 area5 area6"
+    ;
+    gap: 15px;
+    padding: 15px;
+}
+//------------------------------------------------------------------------------------------------------------------------------------------------------------------
+.chipa{
+    grid-area: area1;
+    border-radius: 1%;
+    border: 2px solid $main-orange-border;
+    background-color: $main-orange;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    text-justify: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    box-shadow: 5px 5px 15px 0px black;
+    img{
+        border-radius: 10%;
+        height: 400px;
+        width: 90%;
+        object-fit: cover;
+        transition: 1s;
+        &:hover {   
+            height: 500px;
+            width: 500px;
+            box-shadow: 5px 5px 15px 0px black;
+        }
+    }
+    h2{
+        font-family: $main-font;
+        padding: 15px 0px 0px 2px;
+    }
+    p{
+        font-family: 'Lora', serif;
+        font-style: italic;
+        padding: 0px 10px;
+        font-size: larger;
+    }
+    ul{
+        font-style: italic;
+        font-family: 'Lora', serif;
+        display: flex;
+        gap: 30px;
+        padding: 7px 0px;
+        font-size: larger;
+    }
+}
+//------------------------------------------------------------------------------------------------------------------------------------------------------------------
+.pepas{
+    grid-area: area2;
+    border-radius: 1%;
+    border: 2px solid $secondary-yellow-border;
+    background-color: $secondary-yellow;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    text-justify: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    box-shadow: 5px 5px 15px 0px black;
+    img{
+        border-radius: 10%;
+        height: 400px;
+        width: 90%;
+        object-fit: cover;
+        transition: 1s;
+        &:hover {   
+            height: 500px;
+            width: 500px;
+            box-shadow: 5px 5px 15px 0px black;
+        }
+    }
+    h2{
+        font-family: $main-font;
+        padding: 15px 0px 0px 2px;
+    }
+    p{
+        font-family: 'Lora', serif;
+        font-style: italic;
+        font-size: larger;
+        padding: 0px 10px;
+    }
+}
+//------------------------------------------------------------------------------------------------------------------------------------------------------------------
+.medialunas{
+    grid-area: area3;
+    border-radius: 1%;
+    border: 2px solid $main-orange-border;
+    background-color: $main-orange;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    text-justify: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    box-shadow: 5px 5px 15px 0px black;
+    img{
+        border-radius: 10%;
+        height: 400px;
+        width: 90%;
+        object-fit: cover;
+        transition: 1s;
+        &:hover {   
+            height: 500px;
+            width: 500px;
+            box-shadow: 5px 5px 15px 0px black;
+        }
+    }
+    h2{
+        font-family: $main-font;
+        padding: 15px 0px 0px 2px;
+    }
+    p{
+        font-family: 'Lora', serif;
+        font-style: italic;
+        font-size: larger;
+        padding: 0px 10px;
+    }
+}
+//------------------------------------------------------------------------------------------------------------------------------------------------------------------
+.alfajores{
+    grid-area: area4;
+    border-radius: 1%;
+    border: 2px solid $secondary-yellow-border;
+    background-color: $secondary-yellow;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    text-justify: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    box-shadow: 5px 5px 15px 0px black;
+    img{
+        border-radius: 10%;
+        height: 400px;
+        width: 90%;
+        object-fit: cover;
+        transition: 1s;
+        &:hover {   
+            height: 500px;
+            width: 500px;
+            box-shadow: 5px 5px 15px 0px black;
+        }
+    }
+    h2{
+        font-family: $main-font;
+        padding: 15px 0px 0px 2px;
+    }
+    p{
+        font-family: 'Lora', serif;
+        font-style: italic;
+        font-size: larger;
+        padding: 0px 10px;
+    }
+    ul{
+        font-style: italic;
+        font-family: 'Lora', serif;
+        padding: 7px 0px;
+        font-size: larger;
+    }
+}
+//------------------------------------------------------------------------------------------------------------------------------------------------------------------
+.sopaparaguaya{
+    grid-area: area5;
+    border-radius: 1%;
+    border: 2px solid $main-orange-border;
+    background-color: $main-orange;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    text-justify: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    box-shadow: 5px 5px 15px 0px black;
+    img{
+        border-radius: 10%;
+        height: 400px;
+        width: 90%;
+        object-fit: cover;
+        transition: 1s;
+        &:hover {   
+            height: 500px;
+            width: 500px;
+            box-shadow: 5px 5px 15px 0px black;
+        }
+    }
+    h2{
+        font-family: $main-font;
+        padding: 15px 0px 0px 2px;
+    }
+    p{
+        font-family: 'Lora', serif;
+        font-style: italic;
+        font-size: larger;
+        padding: 0px 10px;
+    }
+}
+//------------------------------------------------------------------------------------------------------------------------------------------------------------------
+.chipapizza{
+    grid-area: area6;
+    border-radius: 1%;
+    border: 2px solid $secondary-yellow-border;
+    background-color: $secondary-yellow;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    text-justify: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    box-shadow: 5px 5px 15px 0px black;
+    img{
+        border-radius: 10%;
+        height: 400px;
+        width: 90%;
+        object-fit: cover;
+        transition: 1s;
+        &:hover {   
+            height: 500px;
+            width: 500px;
+            box-shadow: 5px 5px 15px 0px black;
+        }
+    }
+    h2{
+        font-family: $main-font;
+        padding: 15px 0px 0px 2px;
+    }
+    p{
+        font-family: 'Lora', serif;
+        padding: 0px 10px;
+        font-style: italic;
+        font-size: larger;
+    }
+}
+//------------------------------------------------------------------------------------------------------------------------------------------------------------------
