@@ -83,9 +83,9 @@
     .minilogo{
         display: flex ;
         img{
-            width: 55px;
-            height: 55px;
-            padding-left: 2px;
+            width: 50px;
+            height: 50px;
+            padding-left: 0px;
         }
         p{
             padding-top: 20px;
@@ -110,7 +110,6 @@
     }
     .alfajores ul{
         flex-wrap: wrap;
-        list-style: none;
     }
 }
 //------------------------------------------------------------------------------------------------------------------------------------------------------------------
