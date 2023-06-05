@@ -155,7 +155,7 @@ font-family: 'Sigmar', cursive;
   border: 2px dashed rgba(252, 83, 4, 0.411);
   border-left-style: none;
   border-right-style: none;
-  height: 375px;
+  height: 350px;
   width: 100%;
   object-fit: cover;
   padding: 5px 0px;
@@ -168,7 +168,7 @@ font-family: 'Sigmar', cursive;
   justify-content: center;
 }
 .hero2 img {
-  height: 800px;
+  height: 400px;
   width: 100%;
   object-fit: cover;
   border-bottom: 1px solid black;
