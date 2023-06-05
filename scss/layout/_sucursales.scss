@@ -15,7 +15,7 @@
     border: 2px dashed black;
     border-left-style: none;
     border-right-style: none;
-    background-color: rgba(243, 203, 22, 0.555);
+    background-color: $secondary-yellow;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(1, 1fr);
@@ -33,7 +33,7 @@
     grid-area: area1;
     border: 1px solid black;
     text-align: center;
-    background-color: rgba(252, 83, 4, 0.377);
+    background-image: linear-gradient($sucursales-orange, $dark);
     width: 33%;
     box-shadow: 5px 5px 15px 0px black;
     h2{
@@ -63,7 +63,7 @@
     grid-area: area2;
     border: 1px solid black;
     text-align: center;
-    background-color: rgba(252, 84, 4, 0.377);
+    background-image: linear-gradient($sucursales-orange, $dark);
     width: 33%;
     box-shadow: 5px 5px 15px 0px black;
     h2{
@@ -93,9 +93,9 @@
     grid-area: area3;
     border: 1px solid black;
     text-align: center;
-    background-color: rgba(252, 83, 4, 0.377);
     width: 33%;
     box-shadow: 5px 5px 15px 0px black;
+    background-image: linear-gradient($sucursales-orange, $dark);
     h2{
         font-family: $main-font;
         padding: 10px 5px;

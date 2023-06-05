@@ -13,11 +13,16 @@
         height: 330px;
         width: 340px; 
         object-fit: cover;
+        transition: 0.5s;
+        &:hover{
+            transform: scale(1.05);
+        }
     }
 }
 //------------------------------------------------------------------------------------------------------------------------------------------------------------------
 .hero{
     border: 1px solid black;
+    border-top-style: none;
     border-left-style: none;
     border-right-style: none;
     background-color: $main-yellow;
@@ -28,6 +33,7 @@
     text-align: center;
     width: 100%;
     padding: 10px 0px;
+    background-image: linear-gradient($light, $main-yellow);
     h1{
         font-family: $main-font;
         font-size: 30px;
@@ -41,16 +47,17 @@
         width: 40%;
     }
     img{
-        border: 2px dashed rgb(252, 84, 4);
+        border: 2px dashed $main-orange;
+        border-left-style: none;
+        border-right-style: none;
         height: 375px;
-        width: 95%;
+        width: 100%;
         object-fit: cover;
-        padding: 10px;
+        padding: 5px 0px;
     }
 }
 //------------------------------------------------------------------------------------------------------------------------------------------------------------------
 .hero2{
-    background-color: $main-yellow;
     width: 100%;
     display: flex;
     align-items: center;
